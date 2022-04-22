@@ -5,6 +5,7 @@ class Product extends Component {
         return(
             <div>
                 Hello CC
+                Tran Thanh Hung
             </div>
         )
     }
