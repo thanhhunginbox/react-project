@@ -4,10 +4,12 @@ import './App.css';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
-import MoviesList from './components/movies-list';
-import Movie from './components/movie';
+import Shop from './components/Shop/Shop';
+import Item from './components/Item/Item';
 import AddReview from './components/add-review';
 import Login from './components/login';
+import Test from './components/Test';
+import Footer from './components/Footer/Footer';
 
 function App() {
     const [user, setUser] = useState(null);
@@ -15,12 +17,12 @@ function App() {
         <div className="App">
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="/movies">Movie Reviews</Navbar.Brand>
+                    <Navbar.Brand href="/">Movie Reviews</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link>
-                                <Link to="movies">Movies</Link>
+                                <Link to="shop">Shop</Link>
                             </Nav.Link>
                             <Nav.Link>
                                 {user ? (
@@ -36,11 +38,13 @@ function App() {
                 </Container>
             </Navbar>
             <Routes>
-                <Route path="movies" element={<MoviesList />} />
-                <Route path="movie/:id/review" element={<AddReview/>} />
-                <Route path="movies/:id" element={<Movie/>} />
+                <Route path="shop" element={<Shop />} />
+                <Route path="shop/:id/review" element={<AddReview/>} />
+                <Route path="item/:name" element={<Item/>} />
                 <Route path="login" element={<Login username="amTrinh" />} />
+                <Route path="test" element={<Test />}/>
             </Routes>
+            <Footer/>
         </div>
     );
 }
