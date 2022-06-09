@@ -111,7 +111,7 @@ function Test()
       }
     }
   }
-  calculator()
+  // calculator()
   
     return (
       <div className='filter priceFilter'>

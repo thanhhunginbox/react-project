@@ -41,3 +41,12 @@
 .colorBlack{
     color: black;
 }
+.category{
+    position: relative;
+}
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 10%;
+
+}
