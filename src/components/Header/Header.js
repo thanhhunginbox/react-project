@@ -4,10 +4,12 @@ import {
     , Container
     ,Button
     ,Offcanvas
-    
+    // ,Nav
+    ,NavDropdown
 } from 'react-bootstrap';
 import { useState } from 'react';
 import Cart from '../Cart/Cart'
+import './Header.css'
 function OffCanvasExample({ name, ...props }) {
     const [show, setShow] = useState(false);
   
@@ -41,6 +43,7 @@ function Example() {
   }
 function Header()
 {
+    const name = 'user';
     return (
         <div className='header'>
             <Navbar key='xll' bg="light" expand='xll' className="mb-3">
@@ -50,6 +53,14 @@ function Header()
                         <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search"/>
                     </form>
                     <Example/>
+                    <NavDropdown title= {name} id="navbarScrollingDropdown">
+                      <NavDropdown.Item href="/addproduct">Add Product</NavDropdown.Item>
+                      <NavDropdown.Item href="/yourorders">Your orders</NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="/logout">
+                        Logout
+                      </NavDropdown.Item>
+                    </NavDropdown>
                     <div class="text-end">
                         <button type="button" class="btn btn-outline-dark me-2">Login</button>
                         <button type="button" class="btn btn-warning">Sign-up</button>

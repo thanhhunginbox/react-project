@@ -12,6 +12,8 @@ import Login from './components/login';
 import Test from './components/Test';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import AddProduct from './components/AddProduct/AddProduct';
+import YourOrders from './components/YourOrders/YourOrders'
 
   
 function App() {
@@ -24,6 +26,8 @@ function App() {
                 <Route path="/:name" element={<Item/>} />
                 <Route path="login" element={<Login username="amTrinh" />} />
                 <Route path="test" element={<Test />}/>
+                <Route path="/addproduct" element={<AddProduct/>}/>
+                <Route path="/YourOrders" element={<YourOrders/>}/>
             </Routes>
             <Footer/>
         </div>
