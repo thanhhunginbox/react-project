@@ -13,7 +13,8 @@ import Test from './components/Test';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import AddProduct from './components/AddProduct/AddProduct';
-import YourOrders from './components/YourOrders/YourOrders'
+import Orders from './components/YourOrders/Orders';
+import OrderSuccess from './components/YourOrders/OrderSuccess';
 
   
 function App() {
@@ -27,7 +28,8 @@ function App() {
                 <Route path="login" element={<Login username="amTrinh" />} />
                 <Route path="test" element={<Test />}/>
                 <Route path="/addproduct" element={<AddProduct/>}/>
-                <Route path="/YourOrders" element={<YourOrders/>}/>
+                <Route path="/orders" element={<Orders/>}/>
+                <Route path="/success" element={<OrderSuccess/>}/>
             </Routes>
             <Footer/>
         </div>

@@ -11,3 +11,13 @@
     border-bottom: solid 1px #f1f1f1;
     box-shadow: #e6e6e6 0 0 4px;
 }
+.cart-checkout .cart-summary{
+    min-height: 80px;
+}
+.cart-checkout .cart-summary .summary-item {
+    min-height: 40px;
+}
+.easy-checkout{
+    text-align: center;
+    padding-top: 10px;
+}

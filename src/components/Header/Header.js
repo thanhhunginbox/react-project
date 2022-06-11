@@ -55,7 +55,7 @@ function Header()
                     <Example/>
                     <NavDropdown title= {name} id="navbarScrollingDropdown">
                       <NavDropdown.Item href="/addproduct">Add Product</NavDropdown.Item>
-                      <NavDropdown.Item href="/yourorders">Your orders</NavDropdown.Item>
+                      <NavDropdown.Item href="/orders">Your orders</NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="/logout">
                         Logout

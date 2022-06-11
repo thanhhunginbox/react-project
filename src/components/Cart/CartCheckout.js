@@ -25,11 +25,11 @@ function CartCheckout()
                 </div>
             </div>
             <div className='easy-checkout'>
-                <div className='checkout-actions'>
+                <a href='/orders' className='checkout-actions'>
                     <button className='input-btn custom-btn-primary md text-only icon-left '>
                         <span className='btn-text'>Order</span>
                     </button>
-                </div>
+                </a>
             </div>
         </div>
     )
